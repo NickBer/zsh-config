@@ -97,5 +97,5 @@ export PATH="$PATH:/Users/nikitabereznoj/.local/bin"
 export PATH=$PATH:$(npm root -g)
 export NODE_PATH=$(npm root -g)
 
-alias mc=". /opt/homebrew/Cellar/midnight-commander/4.8.31/libexec/mc/mc-wrapper.sh"
+alias mc="$(brew --prefix mc)/libexec/mc/mc-wrapper.sh"
 alias ls='eza -aF --group-directories-first'
