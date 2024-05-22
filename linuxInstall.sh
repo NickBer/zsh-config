@@ -1,2 +1,6 @@
 sudo apt install zsh mc micro btop tmux fzf zoxide eza ffmpeg ncdu rsync speedtest-cli 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+script_dir=$(dirname "$(readlink -f "$0")")
+cp $script_dir/.zshrc ~/
+cp $script_dir/.p10k.zsh ~/
+chsh -s $(which zsh)
